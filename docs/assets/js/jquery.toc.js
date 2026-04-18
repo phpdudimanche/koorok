@@ -23,6 +23,7 @@
     //   headings: string with a comma-separated list of selectors to be used as headings, ordered
     //   by their relative hierarchy level
         var filename = url.match(/.*\/(.*)$/)[1];  // FIX
+        currLoc = $(location).prop('href');
         console.log(filename);
 
     var toc = function (options) {
@@ -94,7 +95,7 @@
 
                 // Add the list item
                 $("<li/>").appendTo(stack[0]).append(
-                    $("<a/>").text(elem.text()).attr("href", filename + "#" + elem.attr("id"))  // FIX
+                    $("<a/>").text(elem.text()).attr("href", currLoc + "#" + elem.attr("id"))  // FIX
                 );
 
                 currentLevel = level;
