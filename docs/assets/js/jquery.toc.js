@@ -22,7 +22,7 @@
     //   content: where to look for headings
     //   headings: string with a comma-separated list of selectors to be used as headings, ordered
     //   by their relative hierarchy level
-        currLoc = $(location).prop('href');  // FIX
+    var currLoc = $(location).prop('href');  // FIX
     var toc = function (options) {
         return this.each(function () {
             var root = $(this),
