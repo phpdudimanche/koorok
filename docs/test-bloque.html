@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+<title>un test est dit bloqué lorsqu'on ne peut commencer ou continuer à tester</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Les contrôles sont impossibles à effectuer sur ce test ? Le test est bloqué ou non testable.">
+<link href="/assets/css/koorok.css" rel="stylesheet" media="screen">
+<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.min.js" ></script>    </head>
+    <body>
+<div id="page">
+			<div id="nav">		
+		<a href="http://localhost:8080"><img src="/assets/img/ko-or-ok.png" class="mylogo" alt="KO or OK" title="KO or OK"/></a>
+		<p>le test en question</b>
+		
+		<!--<ul class="menu">
+		<li><a href="">concept</a></li>
+		<li><a href="">on ne dit pas</a></li>
+		<li><a href="">template</a></li>
+		</ul>-->
+
+<ul class="menu">
+        <li><a href="/tags/statut-de-test">
+        statut du test</a>
+    </li>
+        <li><a href="/tags/avancement">
+        avancement du test</a>
+    </li>
+        <li><a href="/tags/polemique">
+        polémique</a>
+    </li>
+        <li><a href="/tags/definitions">
+        définitions</a>
+    </li>
+        <li><a href="/tags/outils">
+        outils</a>
+    </li>
+    </ul>
+			
+</div>
+	<div id="content"><div id="flow">	
+                <div id="post">
+<img src="/assets/img/test-bloque.jpg" alt="un test est dit bloqué lorsqu'on ne peut commencer ou continuer à tester" title="un test est dit bloqué lorsqu'on ne peut commencer ou continuer à tester" class="side">
+	<!--<ul id="sub-menu"></ul>-->
+	<div id="mytoc">
+	<ul id="toc"></ul>
+	</div>
+<div id="share"></div>	
+    <h1>Mais qu'est-ce qui bloque dans le statut "bloqué" ?</h1>
+
+<p>Bienheureux les simples d'esprit qui se posent moins de questions et ne se rendent même pas compte que certaines notions prêtent à discussion.</p>
+
+<h2>Bloqué prête à confusion</h2>
+
+<p>Bloqué gêne sur un point essentiel :</p>
+
+<ul>
+<li>Bloqué sonne comme un cas de test avec incident, lequel incident a un statut bloquant : il est donc possible de comprendre "KO bloquant", voir l'article consacré aux <a href="./test-KO" title="KO ou test avec incident">différents types de KO</a>,</li>
+<li>Or bloqué semble s'interprétrer plutôt comme <strong>empêche l'attendu d'être comparé à l'obtenu, faute de pouvoir obtenir cet obtenu</strong>.</li>
+</ul>
+
+<p>Peut-être la confusion n'est-elle pas permise en anglais, mais en français, elle fait son petit effet. Or, le doute ne correspond pas à la clarté que devrait revêtir un statut, voir l'article <sub>à venir</sub> sur les caractéristiques d'un indicateur.</p>
+
+<h2>Si l'on voulait être clair</h2>
+
+<p>Et puis si l'on souhaite vraiment être limpide, <quote>tout événement survenant durant les tests et qui pose question et demande investigation</quote>, bref, un <em>incident</em>, pourrait catégoriser d'office le test en "KO". Cela cadre avec la vision simpliste des indicateurs proposée dans l'article des <a href="./simplicite-indicateurs" title="un simple suivi de test">minima sociaux du suivi de test</a>. Cela entrerait ainsi parfaitement en opposition avec "OK" qui résulterait d'une absence d'incident ou d'une autre règle de décision discutée en un article <sub>à venir</sub> consacré aux critères cités dans l'ISTQB.</p>
+
+<h2>Alors, on l'utilise ou pas, ce statut ?</h2>
+
+<p>Si l'on souhaite utiliser "bloqué", ou toute autre appellation qui n'est après-tout que convention et nous importe peu, c'est que l'on souhaite apporter une distinction par l'usage de ce statut plutôt qu'un autre. De son index, <em>l'indicateur</em> pointe du doigt ce qu'il veut désigner comme sujet de son étude.</p>
+
+<h2>Que permettrait donc l'usage d'un tel statut ?</h2>
+
+<p>Un peu de surf et de lecture nous apprend qu'isoler un tel statut permet de réaliser les actions suivantes.</p>
+
+<ul>
+<li>Arrêter le compteur de la charge (travail interrompu). Mais cela ne peut pas arrêter le compteur du délai, qui tourne tout le temps, le temps passe et ne peut être consommé qu'à vitesse constante.</li>
+<li>Préciser que le test n'a pu être vérifié, validé ou invalidé.</li>
+</ul>
+
+<p>Si vous avez de tels besoins, effectivement avoir recours à un statut de ce type peut être utile, sauf si un statut plus générique avec le même effet couvre déjà ce cas.</p>
+
+<h2>Et les autres, que font-ils ?</h2>
+
+<p>Le moins que l'on puisse dire, c'est que les pratiques sont assez disparates en la matière.</p>
+
+<ul>
+<li>L'ISTQB pourrait laisser supposer que <a href="http://glossary.istqb.org/search/blocked" title="bloqué par le critère d'entrée">c'est le critère d'entrée en début d'exécution de test qui n'est pas atteint</a>.</li>
+<li>Un outil IBM ajoute <a href="https://jazz.net/help-dev/clm/index.jsp?topic=%2Fcom.ibm.rational.test.qm.doc%2Ftopics%2Fc_execution_verdicts.html" title="test partiellement bloqué">le distinguo entre "Blocked" en début d'exécution et "Partially Blocked" en cours d'exécution</a> si on ne peut atteindre le "Completed" ou "Executed"</li>
+<li>Les raisons du caractère "non Excécutable" ou "Non Testable" peuvent porter non seulement sur le système, mais également sur le projet : <a href="http://help.runtestrun.com/kb/using-test-run/what-are-the-differences-between-various-test-case-statuses" title="test bloqué pour raison de projet">bloqué pour cause de testeur en vacances</a>, comme un peu le caractère "Suspendu" que l'on peut aussi trouver.</li>
+</ul>
+
+<p>Bref, tous les goûts sont dans la nature. Et vous, quelle est votre position sur la question ?</p>
+
+<h2>Et pour évacuer la question ?</h2>
+
+<p>Ou alors, vous appliquez cette autre version :</p>
+
+<ul>
+<li>"Non testable" pour bloqué dès le début.</li>
+<li>"Bloqué" pour bloqué ensuite.</li>
+</ul>
+
+<p>De toute façon, tout cela n'est que question de convention. Du moment que toutes les parties prenantes s'y retrouvent, faîtes strictement ce que vous voulez. Aucun conseil à donner.</p>
+
+<p>Je m'étonne juste de la subtilité de certains termes qui peuvent prêter à confusion. Et comme je le disais au début, si vous ne vous en rendez même pas compte, peut-être tant mieux pour vous.</p>
+
+<br />    
+            <footer>    
+                        <ul class="list-unstyled">
+                					  <li>
+                        <i class="fa fa-tags"></i> Mots clefs :
+                                                    <a href="/tags/avancement">avancement</a>, 
+                                                    <a href="/tags/statut-de-test">statut de test</a> 
+                                            </li>
+                                            </ul>
+                    </footer>
+
+        <hr />
+<p><i class="fa fa-comments-o"></i> Vous faîtes aussi un blocage sur bloqué ? Ou au contraire vous trouvez que la discussion est trop capilotractée ?</p>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = test-bloque;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2017-12-20; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://koorok.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+            
+</div>	</div></div>		
+			
+			
+</div>
+
+<script type="text/javascript">
+$("#toc").toc();
+</script>
+
+<script>
+$(function(){// FUNCTIONS BEGIN
+//--------- DATA
+var mytitle=document.title;
+var myurl = encodeURIComponent(document.URL);
+var param={
+"twitter":"https://twitter.com/intent/tweet?text="+mytitle+"+"+myurl,
+"facebook":"http://www.facebook.com/sharer.php?u="+myurl,
+"googleplus":"https://plus.google.com/share?url="+myurl,
+"linkedin":"http://www.linkedin.com/shareArticle?mini=true&url="+myurl
+};
+//---------- FUNCTIONS
+function displayList(){// 00 create list (prerequisite)
+
+			console.log("long "+Object.keys(param).length);
+
+            var thediv = document.getElementById("share");
+			var myul = document.createElement('ul'); 	
+	
+// loop for all 
+jQuery.each(param, function(key, value) {
+
+			var myli = document.createElement('li');
+			myli.setAttribute("id", key);// add id
+			var  mycontent=document.createTextNode("");//--- FIX-01	key=text
+
+			myli.appendChild(mycontent);//--- BUG-01 (need to be a node !)
+			myul.appendChild(myli);
+		  
+});	
+
+		thediv.appendChild(myul);
+}
+function socialAct(event){// 01 possible to capture event from controller
+console.log("act on id : " + event.target.id);
+var myparam=event.target.id ; 
+//--- obligatory to include : avoid return value in function 
+retrieveUrl(myparam);
+
+};
+function retrieveUrl(myparam){// 02 json url value
+var finalurl=eval("param."+myparam);//dynamic var : param.facebook
+console.log("withurl "+finalurl);
+//--- obligatory to include : avoid return value in function 
+socialWindow(finalurl);
+}
+function socialWindow(url) {// 03 open window
+console.log("open :  "+url);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url,"NewWindow",params);
+}
+//--------- CONTROLLER
+$(document).ready(displayList);// create list
+$(document).on('click', "#share",socialAct);
+//-----
+});//--- FUNCTIONS END
+
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        // Add 'external' CSS class to all external links
+        $('a:external').addClass('external');
+        // turn target into target=_blank for elements w external class
+        $(".external").attr('target','_blank');
+      })
+</script>
+    </body>
+</html>

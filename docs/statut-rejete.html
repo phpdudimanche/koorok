@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+<title>un incident est rejeté, jugé non éligible à correction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rejeter un incident, est-ce le trouver non légitime, est-ce réfuter son droit à l'existence et jeter l'opprobre sur son rapporteur ?">
+<link href="/assets/css/koorok.css" rel="stylesheet" media="screen">
+<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.min.js" ></script>    </head>
+    <body>
+<div id="page">
+			<div id="nav">		
+		<a href="http://localhost:8080"><img src="/assets/img/ko-or-ok.png" class="mylogo" alt="KO or OK" title="KO or OK"/></a>
+		<p>le test en question</b>
+		
+		<!--<ul class="menu">
+		<li><a href="">concept</a></li>
+		<li><a href="">on ne dit pas</a></li>
+		<li><a href="">template</a></li>
+		</ul>-->
+
+<ul class="menu">
+        <li><a href="/tags/statut-de-test">
+        statut du test</a>
+    </li>
+        <li><a href="/tags/avancement">
+        avancement du test</a>
+    </li>
+        <li><a href="/tags/polemique">
+        polémique</a>
+    </li>
+        <li><a href="/tags/definitions">
+        définitions</a>
+    </li>
+        <li><a href="/tags/outils">
+        outils</a>
+    </li>
+    </ul>
+			
+</div>
+	<div id="content"><div id="flow">	
+                <div id="post">
+<img src="/assets/img/incident-rejete.jpg" alt="un incident est rejeté, jugé non éligible à correction" title="un incident est rejeté, jugé non éligible à correction" class="side">
+	<!--<ul id="sub-menu"></ul>-->
+	<div id="mytoc">
+	<ul id="toc"></ul>
+	</div>
+<div id="share"></div>	
+    <h1>Qu'est-ce qui est rejeté dans le statut rejeté ?</h1>
+
+<p>Un des maîtres mots de la gestion des incidents est d'être factuel (pour être précis), mais aussi d'être neutre (pour éviter de froisser qui que ce soit). Or, le statut rejeté peut être mal pris par le testeur. Cela vous est arrivé ? Faîtes nous en part dans le fil de discussion qui suit cet article.</p>
+
+<h2>Vous rejetez votre testeur ?</h2>
+
+<p>Dans l'article sur <a href="./statut-differe" title="un incident au statut différé">le statut différé</a>, j'évoquais un possible problème si le différé est noté rejeté. Rejeté est un mot très fort. On voit déjà l'enfant exclu et manquant d'amour. Cela peut être ressenti tout aussi fortement de la part d'un testeur. Son bébé, son incident, issu d'un esprit perspicace et d'un travail tenace se voit : <strong>rejeté, autant-dire jeté aux oubliettes</strong>. Bien-sûr, il faut dédramatiser, ne pas trop s'impliquer et s'appliquer à soi-même la devise d'être factuel, logique et non trop sensible. Mais quand même.</p>
+
+<h2>Vous "flicez" votre testeur ?</h2>
+
+<p>Attention donc à l'utilisation et à la communication qui est faite autour de ce statut rejeté d'un incident.</p>
+
+<ul>
+<li>Certains s'en servent pour mesurer la qualité des tests : ces testeurs qui consignent à tort des incidents (je ne dis pas qu'on ne doit pas surveiller les <em>faux positifs</em>, mais au même titre que les <em>faux négatifs</em> : voir l'article sur <a href="./faux-positif" title="faux échecs et faux succès">les faux positifs et faux négatifs</a>).</li>
+<li>Etat d'esprit très proche de ceux qui ont la tentation d'ériger des quotas de test (c'est tellement facile : des outils font ressortir le nombre de cas de test moyen par jour pour tout testeur ou par testeur : voir l'<sub>article à venir</sub> du bon usage des outils de test).</li>
+</ul>
+
+<p>S'il y a flicage (antinomique avec la mode <em>Agile</em>) sur ce statut, comme sur d'autres points, il est logique que cela soit mal pris.</p>
+
+<h2>Dans quel cas utiliser "rejeté", alors ?</h2>
+
+<p>Il ne m'appartient pas d'y répondre, à chacun de se fixer une ligne de conduite, et mieux vaut qu'elle soit partagée par l'organisation dans une <em>politique de test</em>.<br />
+Si on se réfère au <strong>cycle de l'incident</strong>, vous savez, ces notions ISTQB qui distinguent des termes qui font couler beaucoup d'encre, comme incident et anomalie (voir l'article concernant <a href="./anomalie-normale" title="ce n'est pas une anomalie">une anormale anomalie</a>), <strong>un incident pourrait être étiqueté rejeté lorsque lui est refusé le passage à la notion d'anomalie</strong>. Ma recommandation serait de faire preuve d'une grande honnêteté intellectuelle, et d'une bienveillante pédagogie sur le sujet.</p>
+
+<h2>Comment ménager la susceptibilité de votre testeur ?</h2>
+
+<p>Reprocher à un testeur d'être plus exigeant que soi n'est pas une bonne posture. On peut tenter de tempérer ses ardeurs, mais si son métier lui tient tant à coeur, il suffit d'adapter notre système à son niveau d'exigence. Nier les faits est contraire à l'esprit du test.<br />
+ Préférer à "rejeté" : "différé". Et si en plus du nom du testeur vous souhaitez pourvoir filtrer sur la root/cause ou <em>cause racine</em> non pas du défaut mais du rejet, indiquez par exemple : "perception/niveau d'exigence élevé". Cela vous permettra de placer ces incidents en voiture balai de ceux à réouvrir en unième version (s'ils sont fermés pour les exclure du comptage régulier qui attire trop l'attention sur eux, <a href="./incident-differe" title="un incident différé ne doit pas gêner les stats">comme énoncé dans l'article différé</a>) .</p>
+
+<h2>Quel référentiel de qualité adopter ?</h2>
+
+<p>Encore une fois, tout dépend du référentiel que vous avez. Faîtes preuve d'esprit d'ouverture et acceptez la pensée de vos puristes ou extrémistes. Pensez peut-être à niveler votre référentiel par le haut et non par le bas. Voir l'article  <sub>à venir</sub>sur l'Idéal du test.</p>
+
+<br />    
+            <footer>    
+                        <ul class="list-unstyled">
+                					  <li>
+                        <i class="fa fa-tags"></i> Mots clefs :
+                                                    <a href="/tags/statut-de-test">statut de test</a> 
+                                            </li>
+                                            </ul>
+                    </footer>
+
+        <hr />
+<p><i class="fa fa-comments-o"></i> Vous êtes vexé dès qu'on rejette un de vos incidents ? Vous n'avez pas le même niveau d'exigence que vos collègues. Soulagez vous par la conversation.</p>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = statut-rejete;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2017-12-20; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://koorok.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+            
+</div>	</div></div>		
+			
+			
+</div>
+
+<script type="text/javascript">
+$("#toc").toc();
+</script>
+
+<script>
+$(function(){// FUNCTIONS BEGIN
+//--------- DATA
+var mytitle=document.title;
+var myurl = encodeURIComponent(document.URL);
+var param={
+"twitter":"https://twitter.com/intent/tweet?text="+mytitle+"+"+myurl,
+"facebook":"http://www.facebook.com/sharer.php?u="+myurl,
+"googleplus":"https://plus.google.com/share?url="+myurl,
+"linkedin":"http://www.linkedin.com/shareArticle?mini=true&url="+myurl
+};
+//---------- FUNCTIONS
+function displayList(){// 00 create list (prerequisite)
+
+			console.log("long "+Object.keys(param).length);
+
+            var thediv = document.getElementById("share");
+			var myul = document.createElement('ul'); 	
+	
+// loop for all 
+jQuery.each(param, function(key, value) {
+
+			var myli = document.createElement('li');
+			myli.setAttribute("id", key);// add id
+			var  mycontent=document.createTextNode("");//--- FIX-01	key=text
+
+			myli.appendChild(mycontent);//--- BUG-01 (need to be a node !)
+			myul.appendChild(myli);
+		  
+});	
+
+		thediv.appendChild(myul);
+}
+function socialAct(event){// 01 possible to capture event from controller
+console.log("act on id : " + event.target.id);
+var myparam=event.target.id ; 
+//--- obligatory to include : avoid return value in function 
+retrieveUrl(myparam);
+
+};
+function retrieveUrl(myparam){// 02 json url value
+var finalurl=eval("param."+myparam);//dynamic var : param.facebook
+console.log("withurl "+finalurl);
+//--- obligatory to include : avoid return value in function 
+socialWindow(finalurl);
+}
+function socialWindow(url) {// 03 open window
+console.log("open :  "+url);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url,"NewWindow",params);
+}
+//--------- CONTROLLER
+$(document).ready(displayList);// create list
+$(document).on('click', "#share",socialAct);
+//-----
+});//--- FUNCTIONS END
+
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        // Add 'external' CSS class to all external links
+        $('a:external').addClass('external');
+        // turn target into target=_blank for elements w external class
+        $(".external").attr('target','_blank');
+      })
+</script>
+    </body>
+</html>

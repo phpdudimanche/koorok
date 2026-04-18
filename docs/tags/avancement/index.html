@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+<title>La progression des activités de test se mesure dans l'avancement du projet de test et dans la découverte des défauts.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Avancement dans la consommation du budget alloué et dans l'atteinte des objectifs fixés : découvrir les défauts attendus dans les délais impartis et avec les techniques fixées.">
+<link href="/assets/css/koorok.css" rel="stylesheet" media="screen">
+<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.min.js" ></script>    </head>
+    <body>
+<div id="page">
+			<div id="nav">		
+		<a href="http://localhost:8080"><img src="/assets/img/ko-or-ok.png" class="mylogo" alt="KO or OK" title="KO or OK"/></a>
+		<p>le test en question</b>
+		
+		<!--<ul class="menu">
+		<li><a href="">concept</a></li>
+		<li><a href="">on ne dit pas</a></li>
+		<li><a href="">template</a></li>
+		</ul>-->
+
+<ul class="menu">
+        <li><a href="/tags/statut-de-test">
+        statut du test</a>
+    </li>
+        <li><a href="/tags/avancement">
+        avancement du test</a>
+    </li>
+        <li><a href="/tags/polemique">
+        polémique</a>
+    </li>
+        <li><a href="/tags/definitions">
+        définitions</a>
+    </li>
+        <li><a href="/tags/outils">
+        outils</a>
+    </li>
+    </ul>
+			
+</div>
+	<div id="content"><div id="flow">	
+                <div id="post">
+    <div class="page-header">
+    <h1>avancement</h1>	<p>L'avancement des tests est une donnée sensible, mode projet oblige. Mais avancement dans la découverte des défauts ou dans la consommation du budget ?</p><br />
+	
+</div>
+
+
+    
+    <div class="container">
+  <img src="/assets/img/en-cours-de-test.jpg" alt="le test logiciel en cours est commencé non terminé" title="le test logiciel en cours est commencé non terminé" class="image">
+  <div class="legend"><span class="info">Que signifie réellement "en cours" pour un test ?</span></div>  
+  <div class="overlay">
+    <div class="text">Un test en cours est semblable à un film fleuve s'étalant sur plusieurs jours ou à une pause publicitaire avant la reprise du feuilleton ?
+		<ul><li><a href="/test-en-cours.html">différents types de en cours</a></li></ul>
+	</div>
+  </div>  
+</div>	
+    <div class="container">
+  <img src="/assets/img/simplicite-du-test.png" alt="simplicité du suivi de l'avancement du test" title="simplicité du suivi de l'avancement du test" class="image">
+  <div class="legend"><span class="info">Si on essayait de suivre "simplement" le test ?</span></div>  
+  <div class="overlay">
+    <div class="text">Et si les indicateurs devenaient aussi évidents et ancrés dans les esprits que l'idée pourtant fausse : tester c'est exécuter un test IHM ?
+		<ul><li><a href="/simplicite-indicateurs.html">viser la simplicite</a></li></ul>
+	</div>
+  </div>  
+</div>	
+    <div class="container">
+  <img src="/assets/img/couverture-de-test.png" alt="la couverture des tests logiciel" title="la couverture des tests logiciel" class="image">
+  <div class="legend"><span class="info">Le test ne renvoie t-il qu'à lui-même ?</span></div>  
+  <div class="overlay">
+    <div class="text">Exercer une activité de test, c'est-aussi exercer une activité de reporting. Mais encore faut-il que "le faire savoir" soit fait intelligemment !
+		<ul><li><a href="/couverture-test.html">viser la réassurance</a></li></ul>
+	</div>
+  </div>  
+</div>	
+    <div class="container">
+  <img src="/assets/img/test-bloque.jpg" alt="un test est dit bloqué lorsqu'on ne peut commencer ou continuer à tester" title="un test est dit bloqué lorsqu'on ne peut commencer ou continuer à tester" class="image">
+  <div class="legend"><span class="info">Qui bloque sur le statut bloqué du test ?</span></div>  
+  <div class="overlay">
+    <div class="text">Lorsque l'on souhaite faire passer des messages, encore faut-il s'assurer qu'ils soient bien compris. Un test bloqué peut évoquer différentes choses.
+		<ul><li><a href="/test-bloque.html">bloqué : au début, au muilieu...</a></li></ul>
+	</div>
+  </div>  
+</div>	
+    
+
+
+	
+
+	
+
+</div>	
+	</div></div>		
+			
+			
+</div>
+
+<script type="text/javascript">
+$("#toc").toc();
+</script>
+
+<script>
+$(function(){// FUNCTIONS BEGIN
+//--------- DATA
+var mytitle=document.title;
+var myurl = encodeURIComponent(document.URL);
+var param={
+"twitter":"https://twitter.com/intent/tweet?text="+mytitle+"+"+myurl,
+"facebook":"http://www.facebook.com/sharer.php?u="+myurl,
+"googleplus":"https://plus.google.com/share?url="+myurl,
+"linkedin":"http://www.linkedin.com/shareArticle?mini=true&url="+myurl
+};
+//---------- FUNCTIONS
+function displayList(){// 00 create list (prerequisite)
+
+			console.log("long "+Object.keys(param).length);
+
+            var thediv = document.getElementById("share");
+			var myul = document.createElement('ul'); 	
+	
+// loop for all 
+jQuery.each(param, function(key, value) {
+
+			var myli = document.createElement('li');
+			myli.setAttribute("id", key);// add id
+			var  mycontent=document.createTextNode("");//--- FIX-01	key=text
+
+			myli.appendChild(mycontent);//--- BUG-01 (need to be a node !)
+			myul.appendChild(myli);
+		  
+});	
+
+		thediv.appendChild(myul);
+}
+function socialAct(event){// 01 possible to capture event from controller
+console.log("act on id : " + event.target.id);
+var myparam=event.target.id ; 
+//--- obligatory to include : avoid return value in function 
+retrieveUrl(myparam);
+
+};
+function retrieveUrl(myparam){// 02 json url value
+var finalurl=eval("param."+myparam);//dynamic var : param.facebook
+console.log("withurl "+finalurl);
+//--- obligatory to include : avoid return value in function 
+socialWindow(finalurl);
+}
+function socialWindow(url) {// 03 open window
+console.log("open :  "+url);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url,"NewWindow",params);
+}
+//--------- CONTROLLER
+$(document).ready(displayList);// create list
+$(document).on('click', "#share",socialAct);
+//-----
+});//--- FUNCTIONS END
+
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        // Add 'external' CSS class to all external links
+        $('a:external').addClass('external');
+        // turn target into target=_blank for elements w external class
+        $(".external").attr('target','_blank');
+      })
+</script>
+    </body>
+</html>

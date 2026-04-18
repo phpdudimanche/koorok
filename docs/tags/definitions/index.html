@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+<title>Définitions des principaux termes en test logiciel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dans Koorok, certains termes de test logiciel sont définis au moment de leur première utilisation. Voici l'index du glossaire de test logiciel utilisé.">
+<link href="/assets/css/koorok.css" rel="stylesheet" media="screen">
+<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.min.js" ></script>    </head>
+    <body>
+<div id="page">
+			<div id="nav">		
+		<a href="http://localhost:8080"><img src="/assets/img/ko-or-ok.png" class="mylogo" alt="KO or OK" title="KO or OK"/></a>
+		<p>le test en question</b>
+		
+		<!--<ul class="menu">
+		<li><a href="">concept</a></li>
+		<li><a href="">on ne dit pas</a></li>
+		<li><a href="">template</a></li>
+		</ul>-->
+
+<ul class="menu">
+        <li><a href="/tags/statut-de-test">
+        statut du test</a>
+    </li>
+        <li><a href="/tags/avancement">
+        avancement du test</a>
+    </li>
+        <li><a href="/tags/polemique">
+        polémique</a>
+    </li>
+        <li><a href="/tags/definitions">
+        définitions</a>
+    </li>
+        <li><a href="/tags/outils">
+        outils</a>
+    </li>
+    </ul>
+			
+</div>
+	<div id="content"><div id="flow">	
+                <div id="post">
+    <div class="page-header">
+    <h1>definitions</h1>	<p>Les termes ont leur importance, ou pas, mais alors attention aux malentendus et quiproquos.</p><br />
+	
+</div>
+
+
+    
+    <div class="container">
+  <img src="/assets/img/notions-test-logiciel.jpg" alt="termes de test logiciel : glossaire technique" title="termes de test logiciel : glossaire technique" class="image">
+  <div class="legend"><span class="info">Faut-il parler comme un dictionnaire ?</span></div>  
+  <div class="overlay">
+    <div class="text">Le testeur ISTQB est-il un chien savant utilisant des termes qui le dépassent ?
+		<ul><li><a href="/notions-test-logiciel.html">vocabulaire technique</a></li></ul>
+	</div>
+  </div>  
+</div>	
+    <div class="container">
+  <img src="/assets/img/test-logiciel.jpg" alt="tester ou comparer un attendu à un obtenu" title="tester ou comparer un attendu à un obtenu" class="image">
+  <div class="legend"><span class="info">Qu'est-ce que tester ?</span></div>  
+  <div class="overlay">
+    <div class="text">Une simple question comme qu'est-ce que le test n'entraîne pas des réponses aussi simples qu'elles pourraient l'être.
+		<ul><li><a href="/test-logiciel.html">coeur du métier</a></li></ul>
+	</div>
+  </div>  
+</div>	
+    <div class="container">
+  <img src="/assets/img/ISTQB-VS-ITIL.jpg" alt="l'incident pour ITIL et l'incident pour l'ISTQB" title="l'incident pour ITIL et l'incident pour l'ISTQB" class="image">
+  <div class="legend"><span class="info">ISTQB VS ITIL ?</span></div>  
+  <div class="overlay">
+    <div class="text">Lorsque deux univers se rencontrent, comment se comprennent-ils ?
+		<ul><li><a href="/ISTQB-compatible-ITIL.html">le choix des mots</a></li></ul>
+	</div>
+  </div>  
+</div>	
+    
+
+
+	
+
+	
+
+</div>	
+	</div></div>		
+			
+			
+</div>
+
+<script type="text/javascript">
+$("#toc").toc();
+</script>
+
+<script>
+$(function(){// FUNCTIONS BEGIN
+//--------- DATA
+var mytitle=document.title;
+var myurl = encodeURIComponent(document.URL);
+var param={
+"twitter":"https://twitter.com/intent/tweet?text="+mytitle+"+"+myurl,
+"facebook":"http://www.facebook.com/sharer.php?u="+myurl,
+"googleplus":"https://plus.google.com/share?url="+myurl,
+"linkedin":"http://www.linkedin.com/shareArticle?mini=true&url="+myurl
+};
+//---------- FUNCTIONS
+function displayList(){// 00 create list (prerequisite)
+
+			console.log("long "+Object.keys(param).length);
+
+            var thediv = document.getElementById("share");
+			var myul = document.createElement('ul'); 	
+	
+// loop for all 
+jQuery.each(param, function(key, value) {
+
+			var myli = document.createElement('li');
+			myli.setAttribute("id", key);// add id
+			var  mycontent=document.createTextNode("");//--- FIX-01	key=text
+
+			myli.appendChild(mycontent);//--- BUG-01 (need to be a node !)
+			myul.appendChild(myli);
+		  
+});	
+
+		thediv.appendChild(myul);
+}
+function socialAct(event){// 01 possible to capture event from controller
+console.log("act on id : " + event.target.id);
+var myparam=event.target.id ; 
+//--- obligatory to include : avoid return value in function 
+retrieveUrl(myparam);
+
+};
+function retrieveUrl(myparam){// 02 json url value
+var finalurl=eval("param."+myparam);//dynamic var : param.facebook
+console.log("withurl "+finalurl);
+//--- obligatory to include : avoid return value in function 
+socialWindow(finalurl);
+}
+function socialWindow(url) {// 03 open window
+console.log("open :  "+url);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url,"NewWindow",params);
+}
+//--------- CONTROLLER
+$(document).ready(displayList);// create list
+$(document).on('click', "#share",socialAct);
+//-----
+});//--- FUNCTIONS END
+
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        // Add 'external' CSS class to all external links
+        $('a:external').addClass('external');
+        // turn target into target=_blank for elements w external class
+        $(".external").attr('target','_blank');
+      })
+</script>
+    </body>
+</html>

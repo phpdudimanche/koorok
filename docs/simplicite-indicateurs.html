@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+<title>simplicité du suivi de l'avancement du test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Suivre l'activité de test devrait être simple : pour être facile à faire, évident à comprendre, et j'en passe.">
+<link href="/assets/css/koorok.css" rel="stylesheet" media="screen">
+<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.min.js" ></script>    </head>
+    <body>
+<div id="page">
+			<div id="nav">		
+		<a href="http://localhost:8080"><img src="/assets/img/ko-or-ok.png" class="mylogo" alt="KO or OK" title="KO or OK"/></a>
+		<p>le test en question</b>
+		
+		<!--<ul class="menu">
+		<li><a href="">concept</a></li>
+		<li><a href="">on ne dit pas</a></li>
+		<li><a href="">template</a></li>
+		</ul>-->
+
+<ul class="menu">
+        <li><a href="/tags/statut-de-test">
+        statut du test</a>
+    </li>
+        <li><a href="/tags/avancement">
+        avancement du test</a>
+    </li>
+        <li><a href="/tags/polemique">
+        polémique</a>
+    </li>
+        <li><a href="/tags/definitions">
+        définitions</a>
+    </li>
+        <li><a href="/tags/outils">
+        outils</a>
+    </li>
+    </ul>
+			
+</div>
+	<div id="content"><div id="flow">	
+                <div id="post">
+<img src="/assets/img/simplicite-du-test.png" alt="simplicité du suivi de l'avancement du test" title="simplicité du suivi de l'avancement du test" class="side">
+	<!--<ul id="sub-menu"></ul>-->
+	<div id="mytoc">
+	<ul id="toc"></ul>
+	</div>
+<div id="share"></div>	
+    <h1>Jusqu'à quel point peut-on rester simple ?</h1>
+
+<p>Avec la "légitimité" (article <sub>à venir</sub>) qui nous apporte reconnaissance et confiance de la part des commanditaires, la simplicité <em>KISS</em> peut être un véritable atout. Que gagne-t-on à complexifier (même si le complexe peut être redécomposé en éléments simples) ? Pour rester ou tâcher d'être simple, voici les minima syndicaux du test.</p>
+
+<h2>Statut d'avancement du test</h2>
+
+<ol>
+<li>Non commencé.</li>
+<li><a href="./test-en-cours" title="test en cours de progression">Commencé</a>.</li>
+<li>Terminé.</li>
+</ol>
+
+<h2>Statut de découverte de la qualité</h2>
+
+<ol>
+<li><a href="./test-KO" title="test avec incident">Incident</a>.</li>
+<li>Pas d'incident.</li>
+</ol>
+
+<h2>Statut des incidents</h2>
+
+<ol>
+<li>Ouvert.</li>
+<li>Fermé.</li>
+</ol>
+
+<h2>Le juste niveau de détails</h2>
+
+<p>Bien-sûr, tout dépend du <strong>CQFD(Ce Qu'il Faut Démontrer)</strong> : voir l'article <sub>à venir</sub> sur les indicateurs. Ce qui amène à définir une notion <em>LEAN</em> inexistante (et pour cause si le Lean vise à la qualité totale du zéro défaut) : "la juste qualité" (cf le juste à temps) qui se définirait alors en opposition avec la <em>sur-qualité</em> et la <em>sur-production</em>. A quoi bon "vouloir faire bien", et en plus à la main, consommateur de temps et générateur d'erreur, en produisant un rapport trop riche, difficilement lisible, exploitable, utile... !</p>
+
+<h2>Question - réaction</h2>
+
+<p>Ces 3 rapports répondent à des questions "légitimes" et font entrevoir des plans d'action évidents.</p>
+
+<p>Question // Réponse // Réaction</p>
+
+<ol>
+<li>Les tests avancent ? // OUI, 2 et 3 / NON, 1 // Et si cela n'avance pas comme prévu...</li>
+<li>Il y a des incidents ? // OUI, 1 / NON, 2 // Et si il y en a trop ou pas assez...</li>
+<li>Il reste encore des incidents ? // OUI, 1 / NON, 2 // Et si il y en a trop d'ouverts...</li>
+</ol>
+
+<h2>Complexité cachée</h2>
+
+<p>Derrière cette apparente simplicité se cache une complexité, peut-être ignorée si l'implicite est partagé par tous.</p>
+
+<ol>
+<li>Liée au test, la notion d'avancement est ambigüe. Voir article <sub>à venir</sub> sur l' interprétation du terme avancement.</li>
+<li>La question de l'existence d'incidents peut faire l'objet de plusieurs rapports. Quels incidents et où ? Par exemple : que des incidents à minimum majeurs et consolidés sur des conditions de test par nature surveillées car à risque ou à valeur ajoutée.</li>
+<li>La question du "méta statut" d'incident sous-entend s'intéresser aux incidents ouverts. Mais ces incidents sont toute criticité confondue ou pas, et toute cause égale à sa voisine ou pas (débat d'un incident de nature système qu'il ne faut pas imputer au compte d'incident produit imputable pour "faute" à l'éditeur).</li>
+</ol>
+
+<h2>La définition des limites</h2>
+
+<p>On pourrait considérer qu'au delà de cette vue, on commence déjà à entrer dans la complexité. Il faut alors prévoir un solide argumentaire pour justifier et interpréter les éléments ajoutés aux <strong>statuts discutables et alors souvent discutés</strong>. Ces discutateurs devant l'éternel (merci Elie Simoun) existent, et j'en fais parti. Ce sont aussi bien des personnes de mauvaise foi, des gens obtus, des personnalités lentes à comprendre ou avec leur propre raisonnement, que des testeurs à l'esprit critique exacerbé les poussant à <strong>critiquer/questionner le process de test lui même</strong>.</p>
+
+<br />    
+            <footer>    
+                        <ul class="list-unstyled">
+                					  <li>
+                        <i class="fa fa-tags"></i> Mots clefs :
+                                                    <a href="/tags/avancement">avancement</a>, 
+                                                    <a href="/tags/statut-de-test">statut de test</a> 
+                                            </li>
+                                            </ul>
+                    </footer>
+
+        <hr />
+<p><i class="fa fa-comments-o"></i> Jugez-vous vos indicateurs incompréhensibles, trop complexes et trop difficiles à générer ?</p>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = simplicite-indicateurs;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2017-12-03; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://koorok.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+            
+</div>	</div></div>		
+			
+			
+</div>
+
+<script type="text/javascript">
+$("#toc").toc();
+</script>
+
+<script>
+$(function(){// FUNCTIONS BEGIN
+//--------- DATA
+var mytitle=document.title;
+var myurl = encodeURIComponent(document.URL);
+var param={
+"twitter":"https://twitter.com/intent/tweet?text="+mytitle+"+"+myurl,
+"facebook":"http://www.facebook.com/sharer.php?u="+myurl,
+"googleplus":"https://plus.google.com/share?url="+myurl,
+"linkedin":"http://www.linkedin.com/shareArticle?mini=true&url="+myurl
+};
+//---------- FUNCTIONS
+function displayList(){// 00 create list (prerequisite)
+
+			console.log("long "+Object.keys(param).length);
+
+            var thediv = document.getElementById("share");
+			var myul = document.createElement('ul'); 	
+	
+// loop for all 
+jQuery.each(param, function(key, value) {
+
+			var myli = document.createElement('li');
+			myli.setAttribute("id", key);// add id
+			var  mycontent=document.createTextNode("");//--- FIX-01	key=text
+
+			myli.appendChild(mycontent);//--- BUG-01 (need to be a node !)
+			myul.appendChild(myli);
+		  
+});	
+
+		thediv.appendChild(myul);
+}
+function socialAct(event){// 01 possible to capture event from controller
+console.log("act on id : " + event.target.id);
+var myparam=event.target.id ; 
+//--- obligatory to include : avoid return value in function 
+retrieveUrl(myparam);
+
+};
+function retrieveUrl(myparam){// 02 json url value
+var finalurl=eval("param."+myparam);//dynamic var : param.facebook
+console.log("withurl "+finalurl);
+//--- obligatory to include : avoid return value in function 
+socialWindow(finalurl);
+}
+function socialWindow(url) {// 03 open window
+console.log("open :  "+url);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url,"NewWindow",params);
+}
+//--------- CONTROLLER
+$(document).ready(displayList);// create list
+$(document).on('click', "#share",socialAct);
+//-----
+});//--- FUNCTIONS END
+
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        // Add 'external' CSS class to all external links
+        $('a:external').addClass('external');
+        // turn target into target=_blank for elements w external class
+        $(".external").attr('target','_blank');
+      })
+</script>
+    </body>
+</html>

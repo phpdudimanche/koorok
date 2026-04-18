@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+<title>l'incident pour ITIL et l'incident pour l'ISTQB</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lorsque plusieurs référentiels cohabitent au sein d'une équipe, comment établir un consensus ? Le propre d'un référentiel étant de parvenir à se comprendre, parler plusieurs langues ne facilite pas la tâche !">
+<link href="/assets/css/koorok.css" rel="stylesheet" media="screen">
+<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.min.js" ></script>    </head>
+    <body>
+<div id="page">
+			<div id="nav">		
+		<a href="http://localhost:8080"><img src="/assets/img/ko-or-ok.png" class="mylogo" alt="KO or OK" title="KO or OK"/></a>
+		<p>le test en question</b>
+		
+		<!--<ul class="menu">
+		<li><a href="">concept</a></li>
+		<li><a href="">on ne dit pas</a></li>
+		<li><a href="">template</a></li>
+		</ul>-->
+
+<ul class="menu">
+        <li><a href="/tags/statut-de-test">
+        statut du test</a>
+    </li>
+        <li><a href="/tags/avancement">
+        avancement du test</a>
+    </li>
+        <li><a href="/tags/polemique">
+        polémique</a>
+    </li>
+        <li><a href="/tags/definitions">
+        définitions</a>
+    </li>
+        <li><a href="/tags/outils">
+        outils</a>
+    </li>
+    </ul>
+			
+</div>
+	<div id="content"><div id="flow">	
+                <div id="post">
+<img src="/assets/img/ISTQB-VS-ITIL.jpg" alt="l'incident pour ITIL et l'incident pour l'ISTQB" title="l'incident pour ITIL et l'incident pour l'ISTQB" class="side">
+	<!--<ul id="sub-menu"></ul>-->
+	<div id="mytoc">
+	<ul id="toc"></ul>
+	</div>
+<div id="share"></div>	
+    <h1>L'ISTQB est-il soluble dans ITIL ?</h1>
+
+<p>Ainsi posée, bien sûr que la question attend NON comme réponse. C'est que ce sont deux différentiels, potentiellement différents. Chacun d'eux peut offrir un paradigme complet, une vision du monde entière, auto-suffisante. Difficile d'être polythéiste dans des univers monothéistes.</p>
+
+<p>Combiner ces deux référentiels de "bonnes pratiques" n'est pas prévu. C'est pourtant la réalité du monde du travail, lorsque des systèmes de pensée différents se rencontrent.</p>
+
+<h2>ISTQB et ITIL sont-ils sur les mêmes périmètres ?</h2>
+
+<p>J'ai un confrère ITIL (plus d'1 million de certifiés ?) qui ne tolère pas la vision du monde ISTQB (<a href="https://www.istqb.org/about-as/facts-figures.html" title="certification ISTQB">535 000 certifié ISTQB</a>). Faisons un parallèle entre ces deux référentiels de bonne pratique.</p>
+
+<p>Tout d'abord, ils ne sont pas sur le même périmètre.</p>
+
+<ul>
+<li>ISTQB <a id="ISTQB"></a><quote>(International Software Testing Qualifications Board) s'intéresse au test, aux problématiques qualité de toute la chaîne de fabrication logicielle</quote></li>
+<li>ITIL <a id="ITIL"></a><quote>(Information Technology Infrastructure Library) s'intéresse à l'infrastructure, à l'exploitation des plateformes principalement en production</quote>.</li>
+</ul>
+
+<h2>Qu'est-ce que l'incident ?</h2>
+
+<p>Le terme qui pose évidemment le plus de problème à l'aficionados ITIL lorsque je l'utilise est incident. J'avais déjà évoqué les litiges qu'il peut y avoir autour de <a href="./anomalie-normale#incident" title="incident approuve ou non">ce terme d'incident</a> lorsque cette appellation nous est refusée.</p>
+
+<p>Le workflow ITIL est :</p>
+
+<ul>
+<li><strong>Incident</strong> égale dysfonctionnement d'une infrastructure en service. Ce qui se rapproche le plus en ISTQB est <strong>défaillance</strong> : <a id="defaillance"></a><quote>dysfonctionnment visible d'une application en exécution.</quote></li>
+<li><strong>Problème</strong> est la catégorisation de cet incident, ou la classe dont l'incident est l'instanciation ou l'objet. Je tourne autour de la définition exprès. Mais disons que l'incident est l'itération d'un problème, et que ce problème est reporté dans l'outil de support de résolution d'incident pour qu'à chaque itération le support technique puisse ressortir la même procédure de résolution d'incident. En ISTQB, le terme qui se rapproche le plus du problème ITIL est <strong>cause racine</strong> du défaut : <a id="cause-racine"></a><quote>catégorisation de haut niveau pour l'introduction d'un défaut qui permet de relier plusieurs incidents entre eux et de trouver un effet de levier pour l'amélioration des processus</quote>.</li>
+</ul>
+
+<p>Le workflow ISTQB schématisé est :</p>
+
+<ul>
+<li><strong>Incident</strong> : ticket au statut ouvert.</li>
+<li><strong>Anomalie</strong> : ticket au statut confirmé.</li>
+</ul>
+
+<h2>Qu'est-ce que le bug ?</h2>
+
+<p>Le collègue me dit que je n'ai qu'à utiliser le terme de bug, pour être neutre et ne pas faire entorse aux principes ITIL. Je peux en effet l'utiliser, mais alors cela heurte le principe de précaution abordé dans l'ISTQB.</p>
+
+<ul>
+<li><strong>Bug</strong> est un <strong>défaut</strong>, <a id="bug"></a><quote>élément qui pose problème dans un livrable, quel qu'il soit, étant considéré comme une imperfection</quote>.</li>
+</ul>
+
+<p>Il y a alors un conflit ouvert entre les 2 référentiels.</p>
+
+<ul>
+<li>Qualifier un événement de bug est prématuré pour l'ISTQB alors qu'on ignore encore si ce n'est pas l'observateur qui a un bug et commet une erreur dans son observation.</li>
+<li>Qualifier un événement d'incident est sacrilège pour ITIL lorsq'il n'y a pas dysfonctionnement d'un système et qu'il s'agit juste d'un élément choquant à la lecture d'une doc par exemple.</li>
+</ul>
+
+<h2>Parle-t-on de la même chose ?</h2>
+
+<p>On en revient une fois de plus au périmètre :</p>
+
+<ul>
+<li>ITIL porte sur des problématiques d'exécution.</li>
+<li>ISTQB englobe toutes les problématiques de qualité logiciel, y compris en mode <strong>statique</strong>, <a id="test-statique"></a><quote>sans exécution de l'application sur un système</quote>.</li>
+</ul>
+
+<p>Un terme neutre synonyme d'incident pour les deux référentiels serait événement. On soumet alors, (ni un incident, ni un bug, ni une anomalie), mais un rapport d'étonnement, dans ce fameux outil au nom également tendancieux pour un pratiquant ITIL : le gestionnaire d'incident, voir <sub>article à venir</sub>.</p>
+
+<br />    
+            <footer>    
+                        <ul class="list-unstyled">
+                					  <li>
+                        <i class="fa fa-tags"></i> Mots clefs :
+                                                    <a href="/tags/definitions">definitions</a> 
+                                            </li>
+                                            </ul>
+                    </footer>
+
+        <hr />
+<p><i class="fa fa-comments-o"></i> Comment gérez-vous les arbitrages/écarts de langage lorsque deux référentiels ont cours au sein d'une même équipe ?</p>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = ISTQB-compatible-ITIL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2018-01-18; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://koorok.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+            
+</div>	</div></div>		
+			
+			
+</div>
+
+<script type="text/javascript">
+$("#toc").toc();
+</script>
+
+<script>
+$(function(){// FUNCTIONS BEGIN
+//--------- DATA
+var mytitle=document.title;
+var myurl = encodeURIComponent(document.URL);
+var param={
+"twitter":"https://twitter.com/intent/tweet?text="+mytitle+"+"+myurl,
+"facebook":"http://www.facebook.com/sharer.php?u="+myurl,
+"googleplus":"https://plus.google.com/share?url="+myurl,
+"linkedin":"http://www.linkedin.com/shareArticle?mini=true&url="+myurl
+};
+//---------- FUNCTIONS
+function displayList(){// 00 create list (prerequisite)
+
+			console.log("long "+Object.keys(param).length);
+
+            var thediv = document.getElementById("share");
+			var myul = document.createElement('ul'); 	
+	
+// loop for all 
+jQuery.each(param, function(key, value) {
+
+			var myli = document.createElement('li');
+			myli.setAttribute("id", key);// add id
+			var  mycontent=document.createTextNode("");//--- FIX-01	key=text
+
+			myli.appendChild(mycontent);//--- BUG-01 (need to be a node !)
+			myul.appendChild(myli);
+		  
+});	
+
+		thediv.appendChild(myul);
+}
+function socialAct(event){// 01 possible to capture event from controller
+console.log("act on id : " + event.target.id);
+var myparam=event.target.id ; 
+//--- obligatory to include : avoid return value in function 
+retrieveUrl(myparam);
+
+};
+function retrieveUrl(myparam){// 02 json url value
+var finalurl=eval("param."+myparam);//dynamic var : param.facebook
+console.log("withurl "+finalurl);
+//--- obligatory to include : avoid return value in function 
+socialWindow(finalurl);
+}
+function socialWindow(url) {// 03 open window
+console.log("open :  "+url);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url,"NewWindow",params);
+}
+//--------- CONTROLLER
+$(document).ready(displayList);// create list
+$(document).on('click', "#share",socialAct);
+//-----
+});//--- FUNCTIONS END
+
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        // Add 'external' CSS class to all external links
+        $('a:external').addClass('external');
+        // turn target into target=_blank for elements w external class
+        $(".external").attr('target','_blank');
+      })
+</script>
+    </body>
+</html>

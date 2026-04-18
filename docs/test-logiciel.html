@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+<title>tester ou comparer un attendu à un obtenu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Le test logiciel se résume à confirmer ou infirmer la présence d'un attendu, qu'il a fallu éliciter, clarifier, justifier, formaliser...">
+<link href="/assets/css/koorok.css" rel="stylesheet" media="screen">
+<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.min.js" ></script>    </head>
+    <body>
+<div id="page">
+			<div id="nav">		
+		<a href="http://localhost:8080"><img src="/assets/img/ko-or-ok.png" class="mylogo" alt="KO or OK" title="KO or OK"/></a>
+		<p>le test en question</b>
+		
+		<!--<ul class="menu">
+		<li><a href="">concept</a></li>
+		<li><a href="">on ne dit pas</a></li>
+		<li><a href="">template</a></li>
+		</ul>-->
+
+<ul class="menu">
+        <li><a href="/tags/statut-de-test">
+        statut du test</a>
+    </li>
+        <li><a href="/tags/avancement">
+        avancement du test</a>
+    </li>
+        <li><a href="/tags/polemique">
+        polémique</a>
+    </li>
+        <li><a href="/tags/definitions">
+        définitions</a>
+    </li>
+        <li><a href="/tags/outils">
+        outils</a>
+    </li>
+    </ul>
+			
+</div>
+	<div id="content"><div id="flow">	
+                <div id="post">
+<img src="/assets/img/test-logiciel.jpg" alt="tester ou comparer un attendu à un obtenu" title="tester ou comparer un attendu à un obtenu" class="side">
+	<!--<ul id="sub-menu"></ul>-->
+	<div id="mytoc">
+	<ul id="toc"></ul>
+	</div>
+<div id="share"></div>	
+    <h1>Qu'est-ce que le test logiciel ?</h1>
+
+<p>C'est la question d'ouverture du syllabus Fondation. Mais la question est, sinon biaisée, du moins contextualisée.</p>
+
+<h2>Dans quel contexte a lieu le test logiciel ?</h2>
+
+<p>Cette question repose sur d'autres questions :</p>
+
+<ol>
+<li>Qu'est-ce que la gestion de projet ?</li>
+<li>Qu'est-ce que la gestion des risques ?</li>
+<li>Qu'est-ce que la gestion des exigences ?</li>
+<li>Qu'est-ce que la qualité ?</li>
+<li>Qu'est-ce que l'amélioration continue ?</li>
+<li>Qu'est-ce que l'industrialisation du test ?</li>
+</ol>
+
+<p>Car l'ISTQB considère que <strong>l'activité de test</strong> s'opère dans ce contexte aux multiples dimensions. Ce qui permet très vite de situer son organisation vis-à-vis de la maîtrise des différents sujets, et de lui attribuer une note de mâturité comme en <em>TMMI</em>. Pour l'ISTQB, <strong>le processus de test</strong> s'inscrit donc parmi d'autres processus.</p>
+
+<p>Maintenant, reposons nous la question : qu'est-ce que tester ? On a déjà dit que cela pouvait être une activité, un processus, mais plus précisément...</p>
+
+<h2>A quoi cela semble servir au premier abord ?</h2>
+
+<p>Et c'est là qu'on est tenté de répondre par la manière dont s'effectue le test et  l'objectif qu'il poursuit, d'après ce qu'on a vécu. On ressort alors la définition CMMI des processus VAL et VER.</p>
+
+<ul>
+<li><a id="validation-logicielle"></a><quote>La validation contrôle que les "<strong>exigences spécifiées</strong>" (censées ou non, avec des fautes qu'on ne peut reconnaître ou pas) sont bien implémentées. Le côté <strong>"do the things right", bien faire les choses,</strong> telles que précisément demandées, dans les règles de l'Art.</quote></li>
+<li><a id="verification-logicielle"></a><quote>La vérification contrôle que les "<strong>exigences basées sur l'usage</strong>" (explicitées ou non, spécifiées ou non, mais rendues nécessaires par l'activité métier qu'elles servent) sont bien implémentées. Le côté <strong>"do the right things", faire les bonnes choses,</strong> telles que s'imposant logiquement pour un bon déroulement du processus métier auquel l'application sous test est dévouée.</quote></li>
+</ul>
+
+<p>La question n'était :</p>
+
+<ul>
+<li>ni comment tester, avec ou sans documentation (car on verra que le terme de spécification n'est pas cité),</li>
+<li>ni pourquoi tester, pour s'assurer que ce qui est écrit est réalisé ou que ce qui est nécessaire est produit.</li>
+</ul>
+
+<p>La question était et reste la suivante :</p>
+
+<h2>Qu'est-ce que tester ?</h2>
+
+<p><a id="tester"></a><quote>Tester, c'est COMPARER un ATTENDU à un OBTENU. Point final. Ce qui se résume, en test unitaire, à : AssertEquals(expected,actual);</quote>. Voir l'article <sub>à venir</sub> sur les tests unitaires.<br /> 
+Mais je continue quand même en citant mes sources : la définition de tester est contenue dans la définition de <em>l'oracle de test</em> que voici retranscrite à ma sauce (un référentiel, cela s'approprie).</p>
+
+<p><quote><a id="oracle-de-test"></a>L'oracle de test se définit surtout par ce à quoi il sert, c'est-à-dire à déterminer l'ATTENDU : qui plus tard sera à COMPARER à l'OBTENU (élargissement de la définition au test). Et pour déterminer l'attendu, "tous les moyens sont bons", ou presque.</quote> Sont cités :</p>
+
+<ol>
+<li>manuel utilisateur (il faut comprendre tout type de documentation),</li>
+<li>système existant,</li>
+<li>individu lui-même.</li>
+</ol>
+
+<h2>Rien qui vous choque ?</h2>
+
+<p>Et c'est là que cela fait réagir. Les éléments qui constituent le "source utilisée pour" de la définition font réfléchir.</p>
+
+<ol>
+<li>N'est utilisé ni le terme assez large et neutre de documentaion logicielle, ni le terme habituel précis de spécification. Il ne faut pas s'en formaliser, ce n'est qu'un exemple, et le terme de spécification sera repris dans la définition de l'anomalie auquel un article <sub>à venir</sub> est consacré. Notons juste, pour lot de consolation, que le terme employé est orienté métier : "utilisateur".</li>
+<li>Prendre l'existant lorsqu'il existe, en tant que "point de référence" d'après la définition, peut sembler surprenant. Mais la citation l'indique, ce n'est qu'une base, et c'est vrai qu'il faudrait mieux éviter de faire pire qu'avant si ce n'est pas voulu.</li>
+<li>Peut-être le plus choquant de tous, surtout pour tous ceux qui n'osent penser par eux-même : vous pouvez/devez embarquer votre propre conscience professionnelle, votre propre étalon maître de la qualité logicielle. Il s'agit là de votre propre retour d'expérience qui doit bénificier à l'amélioration continue de la qualité produit. <br /> Cela doit bien-sûr ce faire dans un cadre défini où les limites sont posées, avec les droits et devoirs de chacun. Si vous êtes extrémistes ou en désaccord sur le niveau de qualité attendu ou à consigner, <a href="./statut-rejete" title="s'accorder sur les conditions du rejet d'un incident">vous risquez de voir vos incidents rejetés</a>. <br /> Comme en Agile où une définition stricte du <em>"done"</em> ou terminé s'impose, sûrement faut-il définir explicitement le <em>critère d'acceptation</em> d'un <em>incident</em>, et par là même la vocation d'un <em>gestionnaire d'incident</em>, voir l'article <sub>à venir</sub> sur le gestionnaire d'incident.</li>
+</ol>
+
+<h2>Pas d'autres notions ?</h2>
+
+<p>Maintenant, vous savez que j'ai curieusement cité une autre notion que le test pour expliciter le test. Car le test, du moins en français, c'est aussi autre chose :</p>
+
+<ol>
+<li>"test" en Anglais : 1 ou N <em>cas de test</em>.</li>
+<li>"testing" en Anglais : <em>processus de test</em>.</li>
+</ol>
+
+<p>Mais cela ne change rien à ce que fait tout test : comparer un attendu à un obtenu. D'où l'on peut logiquement envisager deux activités qui s'articulent autour de ce noyau central, même si ce n'est pas le processus de test officiel :</p>
+
+<ul>
+<li>constituer en amont cet attendu et les moyens de le contrôler,</li>
+<li>consigner en aval cet obtenu et en tirer les conséquences en cas de divergence.</li>
+</ul>
+
+<br />    
+            <footer>    
+                        <ul class="list-unstyled">
+                					  <li>
+                        <i class="fa fa-tags"></i> Mots clefs :
+                                                    <a href="/tags/definitions">definitions</a> 
+                                            </li>
+                                            </ul>
+                    </footer>
+
+        <hr />
+<p><i class="fa fa-comments-o"></i> Pouvez-vous répondre aussi simplement à un interlocuteur sur ce qui est le coeur de votre activité ?</p>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = test-logiciel;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2017-12-24; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://koorok.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+            
+</div>	</div></div>		
+			
+			
+</div>
+
+<script type="text/javascript">
+$("#toc").toc();
+</script>
+
+<script>
+$(function(){// FUNCTIONS BEGIN
+//--------- DATA
+var mytitle=document.title;
+var myurl = encodeURIComponent(document.URL);
+var param={
+"twitter":"https://twitter.com/intent/tweet?text="+mytitle+"+"+myurl,
+"facebook":"http://www.facebook.com/sharer.php?u="+myurl,
+"googleplus":"https://plus.google.com/share?url="+myurl,
+"linkedin":"http://www.linkedin.com/shareArticle?mini=true&url="+myurl
+};
+//---------- FUNCTIONS
+function displayList(){// 00 create list (prerequisite)
+
+			console.log("long "+Object.keys(param).length);
+
+            var thediv = document.getElementById("share");
+			var myul = document.createElement('ul'); 	
+	
+// loop for all 
+jQuery.each(param, function(key, value) {
+
+			var myli = document.createElement('li');
+			myli.setAttribute("id", key);// add id
+			var  mycontent=document.createTextNode("");//--- FIX-01	key=text
+
+			myli.appendChild(mycontent);//--- BUG-01 (need to be a node !)
+			myul.appendChild(myli);
+		  
+});	
+
+		thediv.appendChild(myul);
+}
+function socialAct(event){// 01 possible to capture event from controller
+console.log("act on id : " + event.target.id);
+var myparam=event.target.id ; 
+//--- obligatory to include : avoid return value in function 
+retrieveUrl(myparam);
+
+};
+function retrieveUrl(myparam){// 02 json url value
+var finalurl=eval("param."+myparam);//dynamic var : param.facebook
+console.log("withurl "+finalurl);
+//--- obligatory to include : avoid return value in function 
+socialWindow(finalurl);
+}
+function socialWindow(url) {// 03 open window
+console.log("open :  "+url);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url,"NewWindow",params);
+}
+//--------- CONTROLLER
+$(document).ready(displayList);// create list
+$(document).on('click', "#share",socialAct);
+//-----
+});//--- FUNCTIONS END
+
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        // Add 'external' CSS class to all external links
+        $('a:external').addClass('external');
+        // turn target into target=_blank for elements w external class
+        $(".external").attr('target','_blank');
+      })
+</script>
+    </body>
+</html>
