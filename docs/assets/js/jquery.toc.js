@@ -22,9 +22,15 @@
     //   content: where to look for headings
     //   headings: string with a comma-separated list of selectors to be used as headings, ordered
     //   by their relative hierarchy level
+<<<<<<< HEAD
         var filename = url.match(/.*\/(.*)$/)[1];  // FIX
         currLoc = $(location).prop('href');
         console.log(filename);
+=======
+        // var filename = url.match(/.*\/(.*)$/)[1];  // FIX
+        currLoc = $(location).prop('href');
+        // console.log(filename);
+>>>>>>> ea34ec6 (FIX var)
 
     var toc = function (options) {
         return this.each(function () {
