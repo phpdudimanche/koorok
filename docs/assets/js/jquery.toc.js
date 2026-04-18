@@ -22,16 +22,7 @@
     //   content: where to look for headings
     //   headings: string with a comma-separated list of selectors to be used as headings, ordered
     //   by their relative hierarchy level
-<<<<<<< HEAD
-        var filename = url.match(/.*\/(.*)$/)[1];  // FIX
-        currLoc = $(location).prop('href');
-        console.log(filename);
-=======
-        // var filename = url.match(/.*\/(.*)$/)[1];  // FIX
-        currLoc = $(location).prop('href');
-        // console.log(filename);
->>>>>>> ea34ec6 (FIX var)
-
+        currLoc = $(location).prop('href');  // FIX
     var toc = function (options) {
         return this.each(function () {
             var root = $(this),
@@ -98,7 +89,6 @@
                     // the containing element.
                     stack.splice(0, Math.min(currentLevel - level, Math.max(stack.length - 1, 0)));
                 }
-
                 // Add the list item
                 $("<li/>").appendTo(stack[0]).append(
                     $("<a/>").text(elem.text()).attr("href", currLoc + "#" + elem.attr("id"))  // FIX
